@@ -32,7 +32,17 @@ public class SpawnManager : MonoBehaviour
     void createNewQuader()
     {
         float cameraPosition = myCamera.transform.position.y - 2f;
-        Vector3 spawnPosition = new Vector3(0, (cameraPosition * 2.5f), -2f);
+        Vector3 spawnPosition;
+       
+        if(GameController.counter < 7)
+        {
+             spawnPosition = new Vector3(0, (cameraPosition * 2.5f), -2f);
+        }
+        else
+        {
+            spawnPosition = new Vector3(0, (cameraPosition * 3f), -2f);
+        }
+
         quederIndex = 0;
         //Random.Range(0, quaderPrefabs.Length);
         currentPrefab = Instantiate(quaderPrefabs[quederIndex], spawnPosition, quaderPrefabs[quederIndex].transform.rotation);

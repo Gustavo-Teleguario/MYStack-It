@@ -43,6 +43,7 @@ public class QuaderController : MonoBehaviour
             SpawnManager.createQuader = false;
             Destroy(this);
         }
+        GameController.counter++;
     }
     void FixedUpdate()
     {
@@ -51,6 +52,7 @@ public class QuaderController : MonoBehaviour
             this.GetComponent<Rigidbody>().useGravity = true;
             this.GetComponent<Rigidbody>().isKinematic = false;
             speedStoped = false;
+
         } 
     }
 }
