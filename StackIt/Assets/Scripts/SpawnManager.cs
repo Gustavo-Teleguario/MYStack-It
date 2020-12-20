@@ -4,47 +4,55 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-
+    public static SpawnManager spawnInstance;
     public GameObject[] quaderPrefabs;
     public Camera myCamera;
-    private GameObject currentPrefab;
+    public GameObject currentPrefab;
     public static bool createQuader = false;
+    public static bool startGame = false;
+    public Transform other;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-       // quaderFallen = false;
-       // createQuader = false;
+        spawnInstance = this;
     }
-
     // Update is called once per frame
     int quederIndex;
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.S))
-        if (!createQuader)
+        if (startGame)
         {
-            createNewQuader();
-            createQuader = true;
+            if (!createQuader)
+            {
+                createNewQuader();
+                createQuader = true;
+            }
         }
+       
     }
-
+  
     void createNewQuader()
     {
+        GameObject oldPrefab;
+        bool distance = false;
+        
+      
         float cameraPosition = myCamera.transform.position.y - 2f;
         Vector3 spawnPosition;
-       
-        if(GameController.counter < 7)
+        oldPrefab = currentPrefab;
+          
+        if(GameController.counter < 4 && !distance)
         {
              spawnPosition = new Vector3(0, (cameraPosition * 2.5f), -2f);
         }
         else
         {
-            spawnPosition = new Vector3(0, (cameraPosition * 3f), -2f);
+            spawnPosition = new Vector3(0, oldPrefab.transform.position.y * 1.5f, -2f);
+            distance = true;
+  
         }
 
         quederIndex = 0;
-        //Random.Range(0, quaderPrefabs.Length);
         currentPrefab = Instantiate(quaderPrefabs[quederIndex], spawnPosition, quaderPrefabs[quederIndex].transform.rotation);
         QuaderController.speedStoped = true;
     }

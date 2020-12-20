@@ -34,22 +34,22 @@ public class QuaderController : MonoBehaviour
             float time = Mathf.PingPong(Time.time * speed, 1);
             transform.position = Vector3.Lerp(pointA, pointB, time);
         }
-        //this.GetComponent<GameController>().SetCountText();
+        if(GameController.counter < 4)
+        {
+            this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ
+                                                            |RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        //Collition with the Sockel
         if (other.tag == "Sockel")
         {
             SpawnManager.createQuader = false;
             Destroy(this);
-            GameController.counter++;
-            Debug.Log("counter " + GameController.counter);
-           // GetComponent<GameController>().SetCountText();
-
+            //score
+            GameController.gcInstance.SetCountText();
         }
-
     }
     void FixedUpdate()
     {

@@ -5,27 +5,32 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
+    public static GameController gcInstance;
     public static int counter;
     public TextMeshProUGUI scoreText;
 
+
+    private void Awake()
+    {
+        gcInstance = this;
+    }
     private void Start()
     {
-        counter = 0;
-        SetCountText();
+
     }
     void Update()
     {
         if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            //bring down the Quader
             QuaderController.quaderFallen = true;
+            GameManager.instance.StartGame();
+            scoreText.enabled = true;
         }
-        SetCountText();
-        // Debug.Log("Counter " + counter);
     }
 
     public void SetCountText()
     {
-        scoreText.text = "Score: " + counter.ToString();
+        counter++;
+        scoreText.text = "Score: "+counter.ToString();
     }
 }
