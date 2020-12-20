@@ -675,7 +675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688323262}
   m_LocalRotation: {x: -0.008900845, y: -0.7070508, z: -0.008900845, w: 0.7070508}
-  m_LocalPosition: {x: 9.185031, y: 3.06, z: -0.17}
+  m_LocalPosition: {x: 11.16, y: 3.01, z: -0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1455,6 +1455,7 @@ MonoBehaviour:
   - {fileID: 3196627572998820310, guid: 9ca50b1fe7900c248a6ea693438fa1c0, type: 3}
   myCamera: {fileID: 688323264}
   currentPrefab: {fileID: 0}
+  oldPrefab: {fileID: 0}
   other: {fileID: 445555949}
 --- !u!4 &1901186624
 Transform:

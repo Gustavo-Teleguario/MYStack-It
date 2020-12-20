@@ -8,6 +8,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] quaderPrefabs;
     public Camera myCamera;
     public GameObject currentPrefab;
+    public GameObject oldPrefab;
     public static bool createQuader = false;
     public static bool startGame = false;
     public Transform other;
@@ -28,33 +29,30 @@ public class SpawnManager : MonoBehaviour
                 createQuader = true;
             }
         }
-       
+
     }
-  
+
     void createNewQuader()
     {
-        GameObject oldPrefab;
         bool distance = false;
-        
-      
         float cameraPosition = myCamera.transform.position.y - 2f;
         Vector3 spawnPosition;
         oldPrefab = currentPrefab;
-          
-        if(GameController.counter < 4 && !distance)
+
+        if (GameController.counter < 4 && !distance)
         {
-             spawnPosition = new Vector3(0, (cameraPosition * 2.5f), -2f);
+            spawnPosition = new Vector3(0, (cameraPosition * 2.5f), -2f);
         }
         else
         {
             spawnPosition = new Vector3(0, oldPrefab.transform.position.y * 1.5f, -2f);
             distance = true;
-  
+
         }
 
         quederIndex = 0;
         currentPrefab = Instantiate(quaderPrefabs[quederIndex], spawnPosition, quaderPrefabs[quederIndex].transform.rotation);
         QuaderController.speedStoped = true;
     }
-   
+
 }

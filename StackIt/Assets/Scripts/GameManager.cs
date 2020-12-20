@@ -7,9 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject gameStartUI;
-  
-   
-
     private void Awake()
     {
         instance = this;
@@ -28,6 +25,10 @@ public class GameManager : MonoBehaviour
     {
         gameStartUI.SetActive(false);
         SpawnManager.startGame = true;
-        Debug.Log("Ich wurde gerufen");
+    }
+    
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
     }
 }

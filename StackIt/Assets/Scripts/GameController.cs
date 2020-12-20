@@ -14,10 +14,7 @@ public class GameController : MonoBehaviour
     {
         gcInstance = this;
     }
-    private void Start()
-    {
 
-    }
     void Update()
     {
         if (Input.GetTouch(0).phase == TouchPhase.Began)
@@ -26,11 +23,21 @@ public class GameController : MonoBehaviour
             GameManager.instance.StartGame();
             scoreText.enabled = true;
         }
+        CheckUnderLimit();
     }
 
     public void SetCountText()
     {
         counter++;
         scoreText.text = "Score: "+counter.ToString();
+    }
+
+    void CheckUnderLimit()
+    {
+        if(SpawnManager.spawnInstance.oldPrefab.transform.position.y < 0.515f)
+        {
+            GameManager.instance.PauseGame();
+            Debug.Log("Stop Current Game");
+        }
     }
 }
