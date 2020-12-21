@@ -29,25 +29,22 @@ public class SpawnManager : MonoBehaviour
                 createQuader = true;
             }
         }
-
+        GameController.gcInstance.CheckUnderLimit();
     }
 
     void createNewQuader()
     {
         bool distance = false;
-        float cameraPosition = myCamera.transform.position.y - 2f;
         Vector3 spawnPosition;
         oldPrefab = currentPrefab;
-
         if (GameController.counter < 4 && !distance)
         {
-            spawnPosition = new Vector3(0, (cameraPosition * 2.5f), -2f);
+            spawnPosition = new Vector3(0, 2.5f, -2f);
         }
         else
         {
             spawnPosition = new Vector3(0, oldPrefab.transform.position.y * 1.5f, -2f);
             distance = true;
-
         }
 
         quederIndex = 0;

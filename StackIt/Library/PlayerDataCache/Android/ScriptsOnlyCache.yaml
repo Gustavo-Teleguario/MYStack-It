@@ -69,25 +69,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12516}
     - Class: 114
-      Script: {instanceID: 13188}
+      Script: {instanceID: 12626}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13190}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13194}
     - Class: 114
-      Script: {instanceID: 13412}
+      Script: {instanceID: 13208}
     - Class: 114
-      Script: {instanceID: 13478}
+      Script: {instanceID: 13414}
     - Class: 114
-      Script: {instanceID: 13650}
+      Script: {instanceID: 13480}
     - Class: 114
-      Script: {instanceID: 13862}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 13892}
+      Script: {instanceID: 13864}
     - Class: 114
-      Script: {instanceID: 13952}
+      Script: {instanceID: 13894}
     - Class: 114
-      Script: {instanceID: 15538}
+      Script: {instanceID: 13954}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -119,7 +119,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 459b50185a167c1d210a783633c72823
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraController
@@ -305,6 +305,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 8e2301eb294888c12951189f1b76336d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -377,7 +383,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: d12fa4a2384cba2ad318c33103a3f3e5
+      Hash: c3992c363d1d8390eb14b0a165bb7c49
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnManager
@@ -545,16 +551,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: ab2a4fea96d92b50881f8e3ba76f9346
+      Hash: d7912c765efb61cb6ee4c7c78f120d21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
-  - hash:
-      serializedVersion: 2
-      Hash: 8e2301eb294888c12951189f1b76336d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/StackIT.unity

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 35
+  controlID: 121
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 127
+  controlID: 120
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 133
+  controlID: 62
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,8 +392,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa370000
-    m_LastClickedID: 14330
+    m_SelectedIDs: f6370000
+    m_LastClickedID: 14326
     m_ExpandedIDs: 00000000f037000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -603,9 +603,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.185032, y: 3.0599997, z: -0.17000008}
+    m_Target: {x: -3.55, y: 3, z: 0}
     speed: 2
-    m_Value: {x: 9.185032, y: 3.0599997, z: -0.17000008}
+    m_Value: {x: -3.55, y: 3, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -652,13 +652,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.20252948, y: 0.51805514, z: -0.12777486, w: 0.8211805}
+    m_Target: {x: 0.12581107, y: -0.7010655, z: 0.12780583, w: 0.6902243}
     speed: 2
-    m_Value: {x: 0.20252308, y: 0.51803875, z: -0.12777083, w: 0.8211546}
+    m_Value: {x: 0.12580697, y: -0.70104265, z: 0.12780167, w: 0.6902018}
   m_Size:
-    m_Target: 12.124356
+    m_Target: 11.830483
     speed: 2
-    m_Value: 12.124356
+    m_Value: 11.830483
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -711,20 +711,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2a370000
-      m_LastClickedID: 14122
-      m_ExpandedIDs: 4833ffff7c34ffff60fbffff203700003e3700006c37000074370000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 60fbffff203700003e37000074370000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Main Camera
-        m_OriginalName: Main Camera
+        m_Name: Plane
+        m_OriginalName: Plane
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 14122
+        m_UserData: -20568
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0

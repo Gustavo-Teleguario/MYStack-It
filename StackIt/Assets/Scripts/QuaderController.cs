@@ -9,12 +9,13 @@ public class QuaderController : MonoBehaviour
     Vector3 pointA;
     Vector3 pointB;
 
-    private float speed = 0.5f;
+    public static float speed = 0.4f;
     public static bool speedStoped;
     public static bool quaderFallen;
 
     void Start()
     {
+     
         createQuader();
         speedStoped = true;
         quaderFallen = false;
@@ -29,16 +30,18 @@ public class QuaderController : MonoBehaviour
     void Update()
     {
         //Moved back and Fort
+
         if (speedStoped)
         {
             float time = Mathf.PingPong(Time.time * speed, 1);
             transform.position = Vector3.Lerp(pointA, pointB, time);
         }
-        if(GameController.counter < 4)
+        if (GameController.counter < 4)
         {
             this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ
-                                                            |RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+                                                            | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
+
     }
 
     private void OnTriggerEnter(Collider other)

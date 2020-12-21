@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
     public static GameController gcInstance;
     public static int counter;
     public TextMeshProUGUI scoreText;
-
+    float limit = 0.515f;
 
     private void Awake()
     {
@@ -23,18 +23,19 @@ public class GameController : MonoBehaviour
             GameManager.instance.StartGame();
             scoreText.enabled = true;
         }
-        CheckUnderLimit();
+
     }
 
     public void SetCountText()
     {
         counter++;
-        scoreText.text = "Score: "+counter.ToString();
+        QuaderController.speed += 0.05f;
+        scoreText.text = "Score: " + counter.ToString();
     }
 
-    void CheckUnderLimit()
+    public void CheckUnderLimit()
     {
-        if(SpawnManager.spawnInstance.oldPrefab.transform.position.y < 0.515f)
+        if (SpawnManager.spawnInstance.oldPrefab.transform.position.y < limit)
         {
             GameManager.instance.PauseGame();
             Debug.Log("Stop Current Game");
