@@ -29,10 +29,12 @@ public class SpawnManager : MonoBehaviour
                 createQuader = true;
             }
         }
-        GameController.gcInstance.CheckUnderLimit();
+          GameController.gcInstance.CheckUnderLimit();
+        
+     
     }
 
-    void createNewQuader()
+    public void createNewQuader()
     {
         bool distance = false;
         Vector3 spawnPosition;

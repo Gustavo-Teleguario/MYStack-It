@@ -17,11 +17,11 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetTouch(0).phase == TouchPhase.Began)
+        if (Input.GetTouch(0).phase == TouchPhase.Began && !GameManager.instance.gameOver)
         {
             QuaderController.quaderFallen = true;
             GameManager.instance.StartGame();
-            scoreText.enabled = true;
+            scoreText.enabled = true; 
         }
 
     }
@@ -37,8 +37,7 @@ public class GameController : MonoBehaviour
     {
         if (SpawnManager.spawnInstance.oldPrefab.transform.position.y < limit)
         {
-            GameManager.instance.PauseGame();
-            Debug.Log("Stop Current Game");
+            GameManager.instance.EndGame();
         }
     }
 }

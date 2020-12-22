@@ -305,7 +305,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 8e2301eb294888c12951189f1b76336d
+      Hash: 543e9ce17eac6f641f3f360538402246
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager

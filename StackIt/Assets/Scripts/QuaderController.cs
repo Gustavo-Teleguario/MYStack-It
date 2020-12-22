@@ -15,7 +15,7 @@ public class QuaderController : MonoBehaviour
 
     void Start()
     {
-     
+
         createQuader();
         speedStoped = true;
         quaderFallen = false;
@@ -41,7 +41,7 @@ public class QuaderController : MonoBehaviour
             this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ
                                                             | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
-
+      
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,7 +52,9 @@ public class QuaderController : MonoBehaviour
             Destroy(this);
             //score
             GameController.gcInstance.SetCountText();
+            GameController.gcInstance.CheckUnderLimit();
         }
+       
     }
     void FixedUpdate()
     {
