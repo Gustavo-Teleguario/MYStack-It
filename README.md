@@ -1,3 +1,2 @@
 # StackIt_Projeckt_03
-
-This repository is for learning in Unity
+A small sample of how to create a Stack game in unity. 
