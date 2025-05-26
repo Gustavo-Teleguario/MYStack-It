@@ -31,7 +31,7 @@ This project serves as a **practical demonstration** of developing a mobile appl
 
 You have two main options to explore and test this project:
 
-### Option 1: Testing in Unity Editor with Unity Remote (Recommended for Developers)
+### Testing in Unity Editor with Unity Remote (Recommended for Developers)
 
 This method is ideal for quickly testing changes and debugging the game on your Android device in real-time, without building a full app every time.
 
