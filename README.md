@@ -1,12 +1,12 @@
-# Stack It!
+# MYStack It!
 
 ---
 
 ## 🚀 Overview
 
-"Stack It!" is an simple **Android game** developed with the **Unity Engine**. The goal is simple: build the highest possible tower by precisely stacking blocks on top of each other. With each successfully placed block, the speed increases, making the game progressively more challenging.
+"MYStack It!" is an simple **Android game** developed with the **Unity Engine**. The goal is simple: build the highest possible tower by precisely stacking blocks on top of each other. With each successfully placed block, the speed increases, making the game progressively more challenging.
 
-This project serves as a **practical demonstration** of developing a mobile application using Unity. It highlights fundamental concepts such as gameplay implementation, user interface design, and exporting for Android platforms.
+This application offers a straightforward introduction to Unity's core principles, making it ideal for understanding the basics.
 
 ---
 
