@@ -37,8 +37,8 @@ This method is ideal for quickly testing changes and debugging the game on your 
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/StackIt.git](https://github.com/YOUR_USERNAME/StackIt.git)
-    cd StackIt
+    git clone https://github.com/YOUR_USERNAME/MYStack-It.git
+    cd MYStackIt
     ```
     *Replace `YOUR_USERNAME` with your GitHub username.*
 
