@@ -60,5 +60,5 @@ This method is ideal for quickly testing changes and debugging the game on your 
     * Make sure the Unity Remote 5 app is running on your phone.
 
 5.  **Start the Game:**
-    * Open the main scene of the game (usually located under `Assets/Scenes/GameScene.unity` or `Assets/Scenes/MainMenu.unity`).
+    * Open the main scene of the game (usually located under `Assets/Scenes/StackIt.unity`).
     * Click the **Play button** in the Unity Editor. The game should now be displayed synchronously on your Android device, and you can control it via your phone's touchscreen.
