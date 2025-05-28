@@ -6,8 +6,7 @@
 
 "MYStack It!" is an simple **Android game** developed with **Unity Engine**. The goal is simple: build the highest possible tower by precisely stacking blocks on top of each other. With each successfully placed block, the speed increases, making the game progressively more challenging.
 
-This application offers a straightforward introduction to Unity's core principles, making it ideal for understanding the basics.
-
+This application provides a hands-on introduction to game development fundamentals, teaching beginners how to implement basic C# scripts while learning core Unity concepts
 ---
 
 ## ✨ Features
